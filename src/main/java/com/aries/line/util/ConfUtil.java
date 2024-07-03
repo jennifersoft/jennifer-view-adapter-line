@@ -36,6 +36,7 @@ public class ConfUtil {
 		lineProperties.setStickerPackageId(getValue("stickerPackageId", ""));
 		lineProperties.setStickerId(getValue("stickerId", ""));
 		lineProperties.setNotificationDisabled(getValue("notificationDisabled", "false"));
+		lineProperties.setEventLevel(getValue("eventLevel", "NORMAL"));
 	
 		return  lineProperties;
 	}
@@ -45,6 +46,7 @@ public class ConfUtil {
 		lineProperties.setStickerPackageId(getValue("stickerPackageId", ""));
 		lineProperties.setStickerId(getValue("stickerId", ""));
 		lineProperties.setNotificationDisabled(getValue("notificationDisabled", "false"));
+		lineProperties.setEventLevel("FATAL");
 	
 		return  lineProperties;
 	}
